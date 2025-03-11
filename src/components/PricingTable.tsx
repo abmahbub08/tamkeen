@@ -47,7 +47,7 @@ const PricingTable: React.FC<PricingTableProps> = ({ level_name, levelColor, mon
             <td colSpan={9} className="p-2 border-r border-gray-300">1</td>
             <td colSpan={9} className="p-2 border-r border-gray-300">2</td>
             <td colSpan={9} className="p-2 border-r border-gray-300">3</td>
-            <td className="text-start p-2 border-r border-gray-300">{p1}%</td>
+            <td className="text-start p-2 border-r border-gray-300">{(p1/3).toFixed(2)} * 3 ={p1}%</td>
             <td className="text-start p-2">${price1.toFixed(2)}</td>
           </tr>
           <tr className={`hover border-b border-gray-300`}>
@@ -60,7 +60,7 @@ const PricingTable: React.FC<PricingTableProps> = ({ level_name, levelColor, mon
             <td colSpan={3} className="p-2 border-r border-gray-300">1</td>
             <td colSpan={3} className="p-2 border-r border-gray-300">2</td>
             <td colSpan={3} className="p-2 border-r border-gray-300">3</td>
-            <td className="text-start p-2 border-r border-gray-300">{p2}%</td>
+            <td className="text-start p-2 border-r border-gray-300">{(p2/9).toFixed(2)} * 9 ={p2}%</td>
             <td className="text-start p-2">${price2}</td>
           </tr>
           <tr className={`hover border-b border-gray-300 ${levelColor}`}>
@@ -69,7 +69,7 @@ const PricingTable: React.FC<PricingTableProps> = ({ level_name, levelColor, mon
                 {(i % 3) + 1}
               </td>
             ))}
-            <td className="text-start p-2 border-r border-gray-300">{p3}%</td>
+            <td className="text-start p-2 border-r border-gray-300">{(p3/27).toFixed(2)} * 27 ={p3}%</td>
             <td className="text-start p-2">${price3.toFixed(2)}</td>
           </tr>
           <tr className={`hover border-b border-gray-300`}>

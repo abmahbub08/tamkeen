@@ -95,9 +95,15 @@ const PricingCard = ({
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
           <div className="bg-white w-[90%] sm:w-[90vw] max-w-lg sm:max-w-7xl p-6 rounded-2xl shadow-lg relative transform transition-all duration-300">
+            <div className="flex justify-between">
             <h2 className={`text-3xl font-bold mb-4 ${levelClass.text}`}>
               {level_name} Subscription
             </h2>
+            <button onClick={()=>{
+              setModalOpen(false);
+            }}>X</button>
+            </div>
+            
             <PricingTable level_name={level_name} levelColor={levelClass.text} monthly_fee={monthly_fee} p1={percentage_in_level_1} p2={percentage_in_level_2} p3={percentage_in_level_3} />
 
             <button

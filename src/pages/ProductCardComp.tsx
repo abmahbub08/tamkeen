@@ -89,6 +89,7 @@ export const cartService = {
 // Product Card Component
 type ProductCardProps = {
     product: Product;
+    onAddToCart: (id: number) => void;
 };
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {

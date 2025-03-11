@@ -95,7 +95,7 @@ const LandingPage = () => {
   const [authState] = useAtom(authAtom);
 
 
-  const [packages, setPackages] = useState([]);
+  const [packages, setPackages] = useState(DEMO_PACKAGES);
   const [isPackagesLoading, setIsPackagesLoading] = useState(true);
   const [error, setError] = useState(null);
 

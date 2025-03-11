@@ -114,6 +114,13 @@ const ReferralTreePage = () => {
                         </button>
                     </div>
                 )}
+                <div className="mt-4 bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                    <h4 className="text-lg font-semibold text-blue-600">Total Sale</h4>
+                    <p className="text-2xl font-bold text-blue-800">
+                    $45,231.89
+                    </p>
+                </div>
+                <div>&nbsp;</div>
 
                 {referralTree && referralTree.length > 0 ? (
                     referralTree.map((level, index) => (
